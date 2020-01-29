@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,59 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSEindprojectHonolulu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HIP HONOLULU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09Y-QI-lPJ">
+                                <rect key="frame" x="39" y="54" width="337" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="sF0-D3-txa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="dXr-79-HMB">
+                                <rect key="frame" x="39" y="146" width="337" height="673"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Try-hard pour-over snackwave mustache bushwick farm-to-table, freegan etsy. Intelligentsia lomo cred, occupy truffaut bushwick before they sold out live-edge letterpress XOXO hell of pug asymmetrical. Thundercats keytar skateboard beard meditation af. Keytar meditation whatever vaporware pour-over blog. Pok pok forage knausgaard humblebrag godard. Skateboard cloud bread activated charcoal, iPhone pok pok normcore wolf. Hella williamsburg hoodie taiyaki bitters, celiac live-edge ramps.
+
+Photo booth drinking vinegar af palo santo pabst. Aesthetic twee fixie intelligentsia vexillologist. Coloring book sriracha butcher af. 8-bit DIY jean shorts crucifix tofu, cold-pressed ramps actually 3 wolf moon cardigan yr readymade williamsburg dreamcatcher skateboard.
+
+Unicorn sartorial bitters bushwick, fixie ennui dreamcatcher vice jean shorts single-origin coffee food truck locavore. Wayfarers portland YOLO, meggings neutra food truck forage vinyl stumptown keytar wolf woke. Four dollar toast irony heirloom chillwave authentic butcher polaroid vinyl knausgaard typewriter poke celiac photo booth air plant. Kitsch banh mi church-key unicorn mlkshk umami master cleanse truffaut aesthetic fanny pack tofu gentrify iceland try-hard deep v. Vexillologist lo-fi snackwave quinoa cronut glossier hammock blog neutra succulents organic chambray keffiyeh.
+
+Williamsburg synth messenger bag authentic you probably haven't heard of them deep v. Venmo hoodie readymade photo booth 8-bit activated charcoal farm-to-table. Retro coloring book you probably haven't heard of them pabst echo park raw denim pinterest street art wolf beard polaroid 8-bit. Occupy celiac typewriter, pork belly food truck helvetica venmo vexillologist cold-pressed biodiesel affogato locavore sartorial. Cliche pork belly humblebrag banh mi selfies. Kitsch farm-to-table biodiesel asymmetrical keytar bushwick.
+
+Man bun jianbing austin, iPhone try-hard pabst selfies chillwave man braid cliche meditation semiotics. Portland distillery ennui biodiesel, woke vice before they sold out vexillologist. Tote bag copper mug biodiesel hot chicken kogi. Wolf letterpress bicycle rights pinterest godard offal lomo shabby chic mumblecore shaman beard lyft drinking vinegar brunch. Slow-carb farm-to-table pabst, meh flannel aesthetic vexillologist.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oahu-Honolulu-Aerial-Hero-2_1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="c0Q-Rv-kyb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c0Q-Rv-kyb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0wm-GP-uQv"/>
+                            <constraint firstItem="09Y-QI-lPJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="K8D-uj-Ndf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="09Y-QI-lPJ" secondAttribute="trailing" constant="38" id="au8-Cr-3Hg"/>
+                            <constraint firstItem="09Y-QI-lPJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="gF1-xF-3TF"/>
+                            <constraint firstAttribute="bottom" secondItem="c0Q-Rv-kyb" secondAttribute="bottom" id="ihp-zM-v60"/>
+                            <constraint firstItem="c0Q-Rv-kyb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kg7-Ex-fJp"/>
+                            <constraint firstItem="c0Q-Rv-kyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tLd-03-qNX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Oahu-Honolulu-Aerial-Hero-2_1.jpeg" width="1698" height="994"/>
+    </resources>
 </document>
