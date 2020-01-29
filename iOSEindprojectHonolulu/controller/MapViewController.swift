@@ -10,17 +10,29 @@ import UIKit
 import MapKit
 
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+     
+    var allArt = [PublicArt]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            
+        
+        
         func mapView(_ mapView: MKMapView) {
-            let visibleRegion = MKCoordinateRegion.init(center: CLLocationCoordinate2DMake(21.3069, -157.8583), latitudinalMeters: 2000, longitudinalMeters: 2000)
+            let visibleRegion = MKCoordinateRegion.init(center: CLLocationCoordinate2DMake(21.3069, -157.8583), latitudinalMeters: 5000, longitudinalMeters: 5000)
             mapView.region = visibleRegion
         }
+        
+//        allArt = PublicArtDAO.sharedInstance.getAllArt()
+//                
+//        let pinArt:PublicArt = PublicArt(title: <#T##String#>, latitude: <#T##String#>, longitude: <#T##String#>)
+//        
+//        //voeg pin toe aan mapview
+//        self.mapView.addAnnotation(pinArt)
+//        
+
     }
     
     @IBAction func changeMapType(_ sender: UISegmentedControl) {

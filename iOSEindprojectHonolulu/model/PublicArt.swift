@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-class PublicArt {
+class PublicArt: NSObject, MKAnnotation {
        
     var objectid: String
     var title: String
@@ -21,10 +21,19 @@ class PublicArt {
     var credit: String
     var access: String
     var coord: CLLocationCoordinate2D
+
     
-    
-    
-    init(objectid: String, title: String, creator: String, imagefile: String, discipline: String, description: String, date: String, credit: String, access: String, latitude: String, longitude: String) {
+    init(objectid: String,
+         title: String,
+         creator: String,
+         imagefile: String,
+         discipline: String,
+         description: String,
+         date: String,
+         credit: String,
+         access: String,
+         latitude: String,
+         longitude: String) {
         
         let coordLat = Double(latitude)
         let coordLong = Double(longitude)
@@ -38,6 +47,6 @@ class PublicArt {
             self.date = date
             self.credit = credit
             self.access = access
-        self.coord = CLLocationCoordinate2DMake(coordLat!, coordLong!)
+            self.coord = CLLocationCoordinate2DMake(coordLat!, coordLong!)
         }
 }
