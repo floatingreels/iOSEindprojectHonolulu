@@ -18,7 +18,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
             
         func mapView(_ mapView: MKMapView) {
-            let visibleRegion = MKCoordinateRegion.init(center: CLLocationCoordinate2DMake(21.3069, 157.8583), latitudinalMeters: 2000, longitudinalMeters: 2000)
+            let visibleRegion = MKCoordinateRegion.init(center: CLLocationCoordinate2DMake(21.3069, -157.8583), latitudinalMeters: 2000, longitudinalMeters: 2000)
             mapView.region = visibleRegion
         }
     }

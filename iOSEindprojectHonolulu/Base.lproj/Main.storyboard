@@ -78,9 +78,11 @@ Man bun jianbing austin, iPhone try-hard pabst selfies chillwave man braid clich
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yfk-qj-2xj">
                                 <rect key="frame" x="0.0" y="20" width="414" height="793"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OAb-L9-aZC">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OAb-L9-aZC">
                                 <rect key="frame" x="85" y="68" width="245" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="GPU-jY-n6L"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Map"/>
                                     <segment title="Satellite"/>
@@ -96,6 +98,9 @@ Man bun jianbing austin, iPhone try-hard pabst selfies chillwave man braid clich
                             <constraint firstItem="Yfk-qj-2xj" firstAttribute="trailing" secondItem="4Rc-gv-gPB" secondAttribute="trailing" id="9TG-kB-gVa"/>
                             <constraint firstItem="Yfk-qj-2xj" firstAttribute="top" secondItem="f2V-oe-HuU" secondAttribute="top" constant="20" symbolic="YES" id="Cl3-OF-sd7"/>
                             <constraint firstItem="Yfk-qj-2xj" firstAttribute="leading" secondItem="4Rc-gv-gPB" secondAttribute="leading" id="LqJ-4G-ADR"/>
+                            <constraint firstItem="4Rc-gv-gPB" firstAttribute="trailing" secondItem="OAb-L9-aZC" secondAttribute="trailing" constant="84" id="UxA-dH-VcN"/>
+                            <constraint firstItem="Yfk-qj-2xj" firstAttribute="top" secondItem="OAb-L9-aZC" secondAttribute="bottom" constant="-79" id="s16-pj-9GD"/>
+                            <constraint firstItem="OAb-L9-aZC" firstAttribute="leading" secondItem="4Rc-gv-gPB" secondAttribute="leading" constant="85" id="wHY-GG-sWX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Rc-gv-gPB"/>
                     </view>
