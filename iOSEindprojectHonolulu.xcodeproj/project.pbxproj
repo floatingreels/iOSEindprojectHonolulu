@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4167AC7723E19323006FAFD8 /* Oahu-Honolulu-Aerial-Hero-2_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4167AC7623E19323006FAFD8 /* Oahu-Honolulu-Aerial-Hero-2_1.jpeg */; };
+		4167AC7923E19474006FAFD8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4167AC7823E19474006FAFD8 /* MapViewController.swift */; };
+		4167AC7B23E196C4006FAFD8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4167AC7A23E196C4006FAFD8 /* TableViewController.swift */; };
 		41927F4223E183C70051387F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41927F4123E183C70051387F /* AppDelegate.swift */; };
 		41927F4423E183C70051387F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41927F4323E183C70051387F /* SceneDelegate.swift */; };
 		41927F4623E183C70051387F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41927F4523E183C70051387F /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4167AC7623E19323006FAFD8 /* Oahu-Honolulu-Aerial-Hero-2_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Oahu-Honolulu-Aerial-Hero-2_1.jpeg"; sourceTree = "<group>"; };
+		4167AC7823E19474006FAFD8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4167AC7A23E196C4006FAFD8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		41927F3E23E183C70051387F /* iOSEindprojectHonolulu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSEindprojectHonolulu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41927F4123E183C70051387F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41927F4323E183C70051387F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,7 +30,6 @@
 		41927F4A23E183CA0051387F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41927F4D23E183CA0051387F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41927F4F23E183CA0051387F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41927F5B23E1848A0051387F /* Oahu-Honolulu-Aerial-Hero-2_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Oahu-Honolulu-Aerial-Hero-2_1.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +62,12 @@
 		41927F4023E183C70051387F /* iOSEindprojectHonolulu */ = {
 			isa = PBXGroup;
 			children = (
-				41927F5A23E184830051387F /* resources */,
 				41927F5923E1846A0051387F /* model */,
 				41927F5723E184440051387F /* controller */,
 				41927F4123E183C70051387F /* AppDelegate.swift */,
 				41927F4323E183C70051387F /* SceneDelegate.swift */,
 				41927F4723E183C80051387F /* Main.storyboard */,
+				4167AC7623E19323006FAFD8 /* Oahu-Honolulu-Aerial-Hero-2_1.jpeg */,
 				41927F4A23E183CA0051387F /* Assets.xcassets */,
 				41927F4C23E183CA0051387F /* LaunchScreen.storyboard */,
 				41927F4F23E183CA0051387F /* Info.plist */,
@@ -74,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				41927F4523E183C70051387F /* ViewController.swift */,
+				4167AC7823E19474006FAFD8 /* MapViewController.swift */,
+				4167AC7A23E196C4006FAFD8 /* TableViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -83,14 +90,6 @@
 			children = (
 			);
 			path = model;
-			sourceTree = "<group>";
-		};
-		41927F5A23E184830051387F /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				41927F5B23E1848A0051387F /* Oahu-Honolulu-Aerial-Hero-2_1.jpeg */,
-			);
-			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +153,7 @@
 				41927F4E23E183CA0051387F /* LaunchScreen.storyboard in Resources */,
 				41927F4B23E183CA0051387F /* Assets.xcassets in Resources */,
 				41927F4923E183C80051387F /* Main.storyboard in Resources */,
+				4167AC7723E19323006FAFD8 /* Oahu-Honolulu-Aerial-Hero-2_1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +167,8 @@
 				41927F4623E183C70051387F /* ViewController.swift in Sources */,
 				41927F4223E183C70051387F /* AppDelegate.swift in Sources */,
 				41927F4423E183C70051387F /* SceneDelegate.swift in Sources */,
+				4167AC7B23E196C4006FAFD8 /* TableViewController.swift in Sources */,
+				4167AC7923E19474006FAFD8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
