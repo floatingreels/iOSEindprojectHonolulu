@@ -49,7 +49,7 @@ class PublicArtDAO {
                 let objectid = item.value(forKey: "objectid") as! String
                 let title = jsonTitle as! String
                 let creator = jsonCreator as! String
-                let description = item.value(forKey: "description") as! String
+                let details = item.value(forKey: "description") as! String
                 let imagefile = item.value(forKey: "imagefile") as! String
                 let access = item.value(forKey: "access") as! String
                 let discipline = item.value(forKey: "discipline") as! String
@@ -63,7 +63,7 @@ class PublicArtDAO {
                                              creator: creator,
                                              imagefile: imagefile,
                                              discipline: discipline,
-                                             description: description,
+                                             details: details,
                                              date: date,
                                              credit: credit,
                                              access: access,
@@ -92,7 +92,7 @@ class PublicArtDAO {
                                      creator: jsonData.value(forKey: "creator") as! String,
                                      imagefile: jsonData.value(forKey: "imagefile") as! String,
                                      discipline: jsonData.value(forKey: "discipline") as! String,
-                                     description: jsonData.value(forKey: "description") as! String,
+                                     details: jsonData.value(forKey: "description") as! String,
                                      date: jsonData.value(forKey: "date") as! String,
                                      credit: jsonData.value(forKey: "credit") as! String,
                                      access: jsonData.value(forKey: "access") as! String,

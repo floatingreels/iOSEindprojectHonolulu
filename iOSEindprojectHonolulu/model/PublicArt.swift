@@ -12,23 +12,22 @@ import MapKit
 class PublicArt: NSObject, MKAnnotation {
        
     var objectid: String
-    var title: String
+    var title: String?
     var creator: String
     var imagefile: String
     var discipline: String
-    var description: String
+    var details: String
     var date: String
     var credit: String
     var access: String
-    var coord: CLLocationCoordinate2D
+    var coordinate: CLLocationCoordinate2D
 
-    
     init(objectid: String,
          title: String,
          creator: String,
          imagefile: String,
          discipline: String,
-         description: String,
+         details: String,
          date: String,
          credit: String,
          access: String,
@@ -43,10 +42,10 @@ class PublicArt: NSObject, MKAnnotation {
             self.creator = creator
             self.imagefile = imagefile
             self.discipline = discipline
-            self.description = description
+            self.details = details
             self.date = date
             self.credit = credit
             self.access = access
-            self.coord = CLLocationCoordinate2DMake(coordLat!, coordLong!)
+            self.coordinate = CLLocationCoordinate2DMake(coordLat!, coordLong!)
         }
 }
