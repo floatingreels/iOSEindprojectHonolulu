@@ -18,17 +18,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oahu-Honolulu-Aerial-Hero-2_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c0Q-Rv-kyb">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIP HONOLULU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhm-U2-xvk">
-                                <rect key="frame" x="44" y="69" width="325" height="66.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="325" id="Sik-Fx-yMF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="G7z-jK-IxV">
-                                <rect key="frame" x="44.5" y="144" width="325" height="669"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="G7z-jK-IxV">
+                                <rect key="frame" x="45" y="194" width="334" height="619"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="4bC-MQ-Cl6"/>
                                 </constraints>
@@ -48,18 +39,36 @@ Source: wikipedia</string>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfT-ac-nck">
+                                <rect key="frame" x="-1" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Honolulu Art in Public" id="eDF-Ne-MIb"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honolulu History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhm-U2-xvk">
+                                <rect key="frame" x="45" y="110" width="325" height="63.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="Sik-Fx-yMF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dfT-ac-nck" secondAttribute="trailing" constant="1" id="09q-7I-mfL"/>
                             <constraint firstItem="c0Q-Rv-kyb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0wm-GP-uQv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nhm-U2-xvk" secondAttribute="trailing" constant="45" id="29d-p6-a52"/>
-                            <constraint firstItem="Nhm-U2-xvk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Bs7-LH-bdO"/>
-                            <constraint firstItem="G7z-jK-IxV" firstAttribute="top" secondItem="Nhm-U2-xvk" secondAttribute="bottom" constant="8.5" id="Lbl-ag-3NU"/>
-                            <constraint firstItem="Nhm-U2-xvk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="Smr-PY-cFq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nhm-U2-xvk" secondAttribute="trailing" constant="44" id="29d-p6-a52"/>
+                            <constraint firstItem="Nhm-U2-xvk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="Bs7-LH-bdO"/>
+                            <constraint firstItem="G7z-jK-IxV" firstAttribute="top" secondItem="Nhm-U2-xvk" secondAttribute="bottom" constant="20.5" id="Lbl-ag-3NU"/>
+                            <constraint firstItem="Nhm-U2-xvk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Smr-PY-cFq"/>
                             <constraint firstItem="G7z-jK-IxV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XtJ-WB-tZT"/>
+                            <constraint firstItem="dfT-ac-nck" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-1" id="cpl-AO-gFO"/>
                             <constraint firstItem="G7z-jK-IxV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="goa-Wf-vB2"/>
                             <constraint firstAttribute="bottom" secondItem="c0Q-Rv-kyb" secondAttribute="bottom" id="ihp-zM-v60"/>
                             <constraint firstItem="c0Q-Rv-kyb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kg7-Ex-fJp"/>
+                            <constraint firstItem="dfT-ac-nck" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oeP-fD-c6t"/>
                             <constraint firstItem="c0Q-Rv-kyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tLd-03-qNX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,7 +77,7 @@ Source: wikipedia</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1559" y="502"/>
+            <point key="canvasLocation" x="-1559.4202898550725" y="501.5625"/>
         </scene>
         <!--Map View-->
         <scene sceneID="fgb-mp-xEK">
@@ -79,13 +88,13 @@ Source: wikipedia</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yfk-qj-2xj">
-                                <rect key="frame" x="0.0" y="20" width="414" height="793"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <connections>
                                     <outlet property="delegate" destination="wMG-s9-lE3" id="WeL-4a-zzj"/>
                                 </connections>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OAb-L9-aZC">
-                                <rect key="frame" x="85" y="68" width="245" height="32"/>
+                                <rect key="frame" x="85" y="109" width="245" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="GPU-jY-n6L"/>
                                 </constraints>
@@ -102,92 +111,121 @@ Source: wikipedia</string>
                         <constraints>
                             <constraint firstItem="Yfk-qj-2xj" firstAttribute="bottom" secondItem="4Rc-gv-gPB" secondAttribute="bottom" id="8Na-8V-IIs"/>
                             <constraint firstItem="Yfk-qj-2xj" firstAttribute="trailing" secondItem="4Rc-gv-gPB" secondAttribute="trailing" id="9TG-kB-gVa"/>
-                            <constraint firstItem="Yfk-qj-2xj" firstAttribute="top" secondItem="f2V-oe-HuU" secondAttribute="top" constant="20" symbolic="YES" id="Cl3-OF-sd7"/>
+                            <constraint firstItem="Yfk-qj-2xj" firstAttribute="top" secondItem="f2V-oe-HuU" secondAttribute="top" constant="88" id="Cl3-OF-sd7"/>
                             <constraint firstItem="Yfk-qj-2xj" firstAttribute="leading" secondItem="4Rc-gv-gPB" secondAttribute="leading" id="LqJ-4G-ADR"/>
                             <constraint firstItem="4Rc-gv-gPB" firstAttribute="trailing" secondItem="OAb-L9-aZC" secondAttribute="trailing" constant="84" id="UxA-dH-VcN"/>
-                            <constraint firstItem="Yfk-qj-2xj" firstAttribute="top" secondItem="OAb-L9-aZC" secondAttribute="bottom" constant="-79" id="s16-pj-9GD"/>
+                            <constraint firstItem="Yfk-qj-2xj" firstAttribute="top" secondItem="OAb-L9-aZC" secondAttribute="bottom" constant="-52" id="s16-pj-9GD"/>
                             <constraint firstItem="OAb-L9-aZC" firstAttribute="leading" secondItem="4Rc-gv-gPB" secondAttribute="leading" constant="85" id="wHY-GG-sWX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Rc-gv-gPB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="mappin.circle" catalog="system" id="daP-WN-UGs"/>
+                    <navigationItem key="navigationItem" id="VqN-JG-24r"/>
                     <connections>
                         <outlet property="mapView" destination="Yfk-qj-2xj" id="etC-FK-7Qk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7v6-tD-lZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-781.15942028985512" y="-299.33035714285711"/>
+            <point key="canvasLocation" x="128.98550724637681" y="-299.33035714285711"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Details-->
         <scene sceneID="RYN-TX-3qg">
             <objects>
                 <viewController id="uRJ-1e-WxP" customClass="DetailViewController" customModule="iOSEindprojectHonolulu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8xy-dH-DAW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oahu-Honolulu-Aerial-Hero-2_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xXZ-As-rVZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1698" height="896"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="P7q-T9-tjs">
-                                <rect key="frame" x="39" y="392" width="336" height="376"/>
+                                <rect key="frame" x="39" y="419" width="336" height="353"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="336" id="leg-g8-Ok0"/>
+                                    <constraint firstAttribute="height" constant="353" id="8nn-aO-3s9"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="MuktaMahee-Light" family="Mukta Mahee" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Light" family="Mukta Mahee" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lHu-Zx-ydt">
-                                <rect key="frame" x="39" y="64" width="336" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="LqP-AA-QOd"/>
-                                    <constraint firstAttribute="width" constant="336" id="fiD-x1-Max"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-nl-7HP">
-                                <rect key="frame" x="183.5" y="304" width="47" height="40"/>
+                                <rect key="frame" x="39" y="106" width="336" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="2cy-CK-IoG"/>
+                                    <constraint firstAttribute="height" constant="66" id="Crw-Lp-TXD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreatorDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaO-UF-MXf">
-                                <rect key="frame" x="158" y="352" width="98" height="32"/>
-                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreatorDate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaO-UF-MXf">
+                                <rect key="frame" x="39" y="172" width="336" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="YGn-pj-MzD"/>
+                                    <constraint firstAttribute="height" constant="61" id="c3Q-gN-vOI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discipline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IS-r3-njc">
+                                <rect key="frame" x="39" y="241" width="140" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="l4H-v5-87k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utM-gk-Szx">
+                                <rect key="frame" x="242" y="241" width="133" height="28.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="Izw-cG-WpN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lHu-Zx-ydt" firstAttribute="top" secondItem="hdm-At-pK2" secondAttribute="top" constant="64" id="BKi-qt-GlC"/>
+                            <constraint firstItem="P7q-T9-tjs" firstAttribute="leading" secondItem="8IS-r3-njc" secondAttribute="leading" id="2Yr-lZ-p26"/>
+                            <constraint firstItem="8IS-r3-njc" firstAttribute="top" secondItem="TaO-UF-MXf" secondAttribute="bottom" constant="8" id="3DU-Pc-MFL"/>
+                            <constraint firstItem="8IS-r3-njc" firstAttribute="leading" secondItem="aaa-nl-7HP" secondAttribute="leading" id="5Na-5E-ZUT"/>
+                            <constraint firstItem="TaO-UF-MXf" firstAttribute="leading" secondItem="aaa-nl-7HP" secondAttribute="leading" id="LES-cM-56m"/>
                             <constraint firstItem="xXZ-As-rVZ" firstAttribute="top" secondItem="8xy-dH-DAW" secondAttribute="top" id="Ptl-m8-Dkq"/>
-                            <constraint firstItem="P7q-T9-tjs" firstAttribute="top" secondItem="TaO-UF-MXf" secondAttribute="bottom" constant="8" id="V28-1d-DNO"/>
                             <constraint firstItem="aaa-nl-7HP" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="VEk-Cy-o3H"/>
-                            <constraint firstItem="TaO-UF-MXf" firstAttribute="top" secondItem="aaa-nl-7HP" secondAttribute="bottom" constant="8" id="djR-sD-9m7"/>
-                            <constraint firstItem="xXZ-As-rVZ" firstAttribute="trailing" secondItem="hdm-At-pK2" secondAttribute="trailing" id="dxe-wW-pRa"/>
-                            <constraint firstItem="lHu-Zx-ydt" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="eJx-mZ-eA6"/>
+                            <constraint firstItem="xXZ-As-rVZ" firstAttribute="top" secondItem="aaa-nl-7HP" secondAttribute="bottom" constant="-172" id="Xfi-4g-jLy"/>
+                            <constraint firstItem="TaO-UF-MXf" firstAttribute="top" secondItem="aaa-nl-7HP" secondAttribute="bottom" id="djR-sD-9m7"/>
                             <constraint firstItem="P7q-T9-tjs" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="f99-hp-mKT"/>
-                            <constraint firstItem="hdm-At-pK2" firstAttribute="bottom" secondItem="P7q-T9-tjs" secondAttribute="bottom" constant="40" id="otj-El-JSE"/>
+                            <constraint firstItem="hdm-At-pK2" firstAttribute="trailing" secondItem="utM-gk-Szx" secondAttribute="trailing" constant="39" id="j6h-W2-XUc"/>
+                            <constraint firstItem="8IS-r3-njc" firstAttribute="leading" secondItem="hdm-At-pK2" secondAttribute="leading" constant="39" id="kCa-GF-JCu"/>
+                            <constraint firstItem="hdm-At-pK2" firstAttribute="bottom" secondItem="P7q-T9-tjs" secondAttribute="bottom" constant="41" id="otj-El-JSE"/>
                             <constraint firstItem="TaO-UF-MXf" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="q56-V7-BHM"/>
-                            <constraint firstItem="aaa-nl-7HP" firstAttribute="top" secondItem="lHu-Zx-ydt" secondAttribute="bottom" constant="40" id="tVW-4Q-19H"/>
+                            <constraint firstItem="utM-gk-Szx" firstAttribute="top" secondItem="TaO-UF-MXf" secondAttribute="bottom" constant="8" id="sYy-Sh-9C3"/>
                             <constraint firstAttribute="bottom" secondItem="xXZ-As-rVZ" secondAttribute="bottom" id="wJs-jV-F4L"/>
                             <constraint firstItem="xXZ-As-rVZ" firstAttribute="leading" secondItem="hdm-At-pK2" secondAttribute="leading" id="y0S-UC-J3M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hdm-At-pK2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="e2w-9J-exM"/>
+                    <navigationItem key="navigationItem" title="Details" id="e2w-9J-exM"/>
+                    <connections>
+                        <outlet property="accessLbl" destination="utM-gk-Szx" id="7yp-fu-41v"/>
+                        <outlet property="creatorDateLbl" destination="TaO-UF-MXf" id="fCw-GK-qto"/>
+                        <outlet property="detailsTV" destination="P7q-T9-tjs" id="Ji5-dG-bGt"/>
+                        <outlet property="disciplineLbl" destination="8IS-r3-njc" id="PBS-yK-SFo"/>
+                        <outlet property="titleLbl" destination="aaa-nl-7HP" id="89l-kh-RLt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0F-Px-qOS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60.869565217391312" y="107.8125"/>
+            <point key="canvasLocation" x="921.73913043478262" y="85.714285714285708"/>
         </scene>
-        <!--Table Vew-->
+        <!--Table View-->
         <scene sceneID="3eb-LX-KbD">
             <objects>
-                <viewController title="Table Vew" id="haG-H5-fg4" customClass="TableViewController" customModule="iOSEindprojectHonolulu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Table View" id="haG-H5-fg4" customClass="TableViewController" customModule="iOSEindprojectHonolulu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jjz-Zx-JR7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,14 +282,16 @@ Source: wikipedia</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Oo-Nm-V9R"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="List" image="list.bullet" catalog="system" id="K86-TH-MUN"/>
+                    <navigationItem key="navigationItem" title="Public Art" id="pAa-rL-9ZZ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="BiS-eL-npg"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="3fV-Ic-qKy" id="clw-es-maI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3L-Zr-Xb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-781.15942028985512" y="501.5625"/>
+            <point key="canvasLocation" x="128.98550724637681" y="501.5625"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="X02-Xa-jwD">
@@ -262,16 +302,57 @@ Source: wikipedia</string>
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="oXO-0J-ruh"/>
-                        <segue destination="wMG-s9-lE3" kind="relationship" relationship="viewControllers" id="3jb-Ni-i4i"/>
-                        <segue destination="haG-H5-fg4" kind="relationship" relationship="viewControllers" id="Lz4-K4-6b2"/>
+                        <segue destination="HSP-tj-rgM" kind="relationship" relationship="viewControllers" id="3jb-Ni-i4i"/>
+                        <segue destination="loq-yB-u9m" kind="relationship" relationship="viewControllers" id="Lz4-K4-6b2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKJ-bd-hfx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1558" y="-299"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="SuW-d8-SwO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="loq-yB-u9m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="list.bullet" catalog="system" id="K86-TH-MUN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cg2-iX-Kwv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="haG-H5-fg4" kind="relationship" relationship="rootViewController" id="LlM-R8-lvE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ul9-qT-i2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781.15942028985512" y="501.5625"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="ZAs-z1-neb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HSP-tj-rgM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="mappin.circle" catalog="system" id="daP-WN-UGs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J1O-PS-00w">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wMG-s9-lE3" kind="relationship" relationship="rootViewController" id="an5-Cx-cfS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVP-AR-Omn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781.15942028985512" y="-299.33035714285711"/>
         </scene>
     </scenes>
     <resources>

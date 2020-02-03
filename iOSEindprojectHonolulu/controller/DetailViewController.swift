@@ -10,21 +10,23 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var creatorDateLbl: UILabel!
+    @IBOutlet weak var accessLbl: UILabel!
+    @IBOutlet weak var disciplineLbl: UILabel!
+    @IBOutlet weak var detailsTV: UITextView!
+    
+    
+    var artToDetail:PublicArt?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        titleLbl.text = artToDetail?.title
+        creatorDateLbl.text = "\(artToDetail!.creator), \(artToDetail!.date)"
+        accessLbl.text = artToDetail?.access
+        disciplineLbl.text = artToDetail?.discipline
+        detailsTV.text = artToDetail?.details
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

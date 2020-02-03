@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UIViewController {
+class TableViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,27 +18,16 @@ class TableViewController: UIViewController {
         super.viewDidLoad()
 
         artWorks = PublicArtDAO.sharedInstance.getAllArt()
-        
     }
-    
-    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+// MARK: DATASOURCE
 
-}
-
-extension TableViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return artWorks.count
     }
+    
+// MARK: DELEGATE
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -50,6 +39,23 @@ extension TableViewController:UITableViewDataSource {
         cell.artDescrLbl.text = art.creator
         
         return cell
-        
+    }
+    
+//MARK: NAVIGATE
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //nakijken of de segue de juiste is
+        if segue.identifier == "showDetailSegue" {
+            //welke cel is de sender
+            let cellToDetail = sender as! UITableViewCell
+            //op welke rij in de tabel staat cel
+            let indexPath = tableView.indexPath(for: cellToDetail)!
+            //welk object zat in de cel
+            let art = artWorks[indexPath.row]
+            //wat is de bestemming van de segue
+            let detailVC = segue.destination as! DetailViewController
+            //de gegevens doorsturen
+            detailVC.artToDetail = art
+        }
     }
 }

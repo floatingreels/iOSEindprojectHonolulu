@@ -19,15 +19,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+            
+            
+            
+        let center = CLLocationCoordinate2D.init(latitude: 21.3069, longitude: -157.8583)
+        let span = MKCoordinateSpan.init(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let visibleRegion = MKCoordinateRegion.init(center: center, span: span)
+        mapView.region = visibleRegion
         
-        func mapView(_ mapView: MKMapView) {
-            let visibleRegion = MKCoordinateRegion.init(center: CLLocationCoordinate2DMake(21.3069, -157.8583), latitudinalMeters: 5000, longitudinalMeters: 5000)
-            mapView.region = visibleRegion
-        }
         
         //allArt = PublicArtDAO.sharedInstance.getAllArt()
                 
-        //let pinArt:PublicArt = PublicArt(objectid: <#String#>, title: <#T##String#>, creator: <#String#>, imagefile: <#String#>, discipline: <#String#>, details: <#String#>, date: <#String#>, credit: <#String#>, access: <#String#>, latitude: <#T##String#>, longitude: <#T##String#>)
+        //let pinArt:PublicArt = PublicArt(objectid: , title: <#T##String#>, creator: <#String#>, imagefile: <#String#>, discipline: <#String#>, details: <#String#>, date: <#String#>, credit: <#String#>, access: <#String#>, latitude: <#T##String#>, longitude: <#T##String#>)
         
         //voeg pin toe aan mapview
         //self.mapView.addAnnotation(pinArt)
@@ -44,13 +47,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+    //}
 }
