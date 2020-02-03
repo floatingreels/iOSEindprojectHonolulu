@@ -32,7 +32,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="4bC-MQ-Cl6"/>
                                 </constraints>
-                                <mutableString key="text">Evidence of the first settlement of Honolulu by the original Polynesian migrants to the archipelago comes from oral histories and artifacts. These indicate that there was a settlement where Honolulu now stands in the 11th century. After Kamehameha I conquered Oʻahu in the Battle of Nuʻuanu at Nuʻuanu Pali, he moved his royal court from the Island of Hawaiʻi to Waikīkī in 1804. His court relocated in 1809 to what is now downtown Honolulu. The capital was moved back to Kailua-Kona in 1812.
+                                <string key="text">Evidence of the first settlement of Honolulu by the original Polynesian migrants to the archipelago comes from oral histories and artifacts. These indicate that there was a settlement where Honolulu now stands in the 11th century. After Kamehameha I conquered Oʻahu in the Battle of Nuʻuanu at Nuʻuanu Pali, he moved his royal court from the Island of Hawaiʻi to Waikīkī in 1804. His court relocated in 1809 to what is now downtown Honolulu. The capital was moved back to Kailua-Kona in 1812.
 
 In 1794, Captain William Brown of Great Britain was the first foreigner to sail into what is now Honolulu Harbor. More foreign ships followed, making the port of Honolulu a focal point for merchant ships traveling between North America and Asia.
 
@@ -43,7 +43,7 @@ A view of the attack on Pearl Harbor in 1941 from Japanese planes. The torpedo e
 
 An economic and tourism boom following statehood brought rapid economic growth to Honolulu and Hawaiʻi. Modern air travel brings, as of 2007, 7.6 million visitors annually to the islands, with 62.3% entering at Honolulu International Airport. Today, Honolulu is a modern city with numerous high-rise buildings, and Waikīkī is the center of the tourism industry in Hawaiʻi, with thousands of hotel rooms. The UK consulting firm Mercer, in a 2009 assessment "conducted to help governments and major companies place employees on international assignments", ranked Honolulu 29th worldwide in quality of living; the survey factored in political stability, personal freedom, sanitation, crime, housing, the natural environment, recreation, banking facilities, availability of consumer goods, education, and public services including transportation.
 
-Source: wikipedia</mutableString>
+Source: wikipedia</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -119,10 +119,74 @@ Source: wikipedia</mutableString>
             </objects>
             <point key="canvasLocation" x="-781.15942028985512" y="-299.33035714285711"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="RYN-TX-3qg">
+            <objects>
+                <viewController id="uRJ-1e-WxP" customClass="DetailViewController" customModule="iOSEindprojectHonolulu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8xy-dH-DAW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oahu-Honolulu-Aerial-Hero-2_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xXZ-As-rVZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="P7q-T9-tjs">
+                                <rect key="frame" x="39" y="392" width="336" height="376"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="leg-g8-Ok0"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Light" family="Mukta Mahee" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lHu-Zx-ydt">
+                                <rect key="frame" x="39" y="64" width="336" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="LqP-AA-QOd"/>
+                                    <constraint firstAttribute="width" constant="336" id="fiD-x1-Max"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-nl-7HP">
+                                <rect key="frame" x="183.5" y="304" width="47" height="40"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreatorDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaO-UF-MXf">
+                                <rect key="frame" x="158" y="352" width="98" height="32"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lHu-Zx-ydt" firstAttribute="top" secondItem="hdm-At-pK2" secondAttribute="top" constant="64" id="BKi-qt-GlC"/>
+                            <constraint firstItem="xXZ-As-rVZ" firstAttribute="top" secondItem="8xy-dH-DAW" secondAttribute="top" id="Ptl-m8-Dkq"/>
+                            <constraint firstItem="P7q-T9-tjs" firstAttribute="top" secondItem="TaO-UF-MXf" secondAttribute="bottom" constant="8" id="V28-1d-DNO"/>
+                            <constraint firstItem="aaa-nl-7HP" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="VEk-Cy-o3H"/>
+                            <constraint firstItem="TaO-UF-MXf" firstAttribute="top" secondItem="aaa-nl-7HP" secondAttribute="bottom" constant="8" id="djR-sD-9m7"/>
+                            <constraint firstItem="xXZ-As-rVZ" firstAttribute="trailing" secondItem="hdm-At-pK2" secondAttribute="trailing" id="dxe-wW-pRa"/>
+                            <constraint firstItem="lHu-Zx-ydt" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="eJx-mZ-eA6"/>
+                            <constraint firstItem="P7q-T9-tjs" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="f99-hp-mKT"/>
+                            <constraint firstItem="hdm-At-pK2" firstAttribute="bottom" secondItem="P7q-T9-tjs" secondAttribute="bottom" constant="40" id="otj-El-JSE"/>
+                            <constraint firstItem="TaO-UF-MXf" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="q56-V7-BHM"/>
+                            <constraint firstItem="aaa-nl-7HP" firstAttribute="top" secondItem="lHu-Zx-ydt" secondAttribute="bottom" constant="40" id="tVW-4Q-19H"/>
+                            <constraint firstAttribute="bottom" secondItem="xXZ-As-rVZ" secondAttribute="bottom" id="wJs-jV-F4L"/>
+                            <constraint firstItem="xXZ-As-rVZ" firstAttribute="leading" secondItem="hdm-At-pK2" secondAttribute="leading" id="y0S-UC-J3M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hdm-At-pK2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e2w-9J-exM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0F-Px-qOS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="107.8125"/>
+        </scene>
         <!--Table Vew-->
         <scene sceneID="3eb-LX-KbD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o3L-Zr-Xb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Table Vew" id="haG-H5-fg4" customClass="TableViewController" customModule="iOSEindprojectHonolulu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jjz-Zx-JR7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -162,6 +226,7 @@ Source: wikipedia</mutableString>
                                         <connections>
                                             <outlet property="artDescrLbl" destination="axa-Ef-x3r" id="B2k-Do-8XE"/>
                                             <outlet property="artTitleLbl" destination="SJc-Ro-UX7" id="gIc-Nr-5g9"/>
+                                            <segue destination="uRJ-1e-WxP" kind="show" identifier="showDetailSegue" id="Vvp-R8-sMt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -184,6 +249,7 @@ Source: wikipedia</mutableString>
                         <outlet property="tableView" destination="3fV-Ic-qKy" id="clw-es-maI"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3L-Zr-Xb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-781.15942028985512" y="501.5625"/>
         </scene>
