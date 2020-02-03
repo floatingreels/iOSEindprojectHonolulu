@@ -10,11 +10,17 @@ import UIKit
 
 class TableViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var artWorks = [PublicArt]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        artWorks = PublicArtDAO.sharedInstance.getAllArt()
+        
     }
+    
     
 
     /*
@@ -27,4 +33,22 @@ class TableViewController: UIViewController {
     }
     */
 
+}
+
+extension TableViewController:UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return artWorks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "artcell", for: indexPath) as! ArtTableViewCell
+        
+        let art = artWorks[indexPath.row]
+        
+        cell.artTitleLbl.text = art.title
+        
+        return cell
+        
+    }
 }

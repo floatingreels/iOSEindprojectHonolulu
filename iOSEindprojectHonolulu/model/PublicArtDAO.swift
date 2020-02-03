@@ -69,13 +69,13 @@ class PublicArtDAO {
                                              access: access,
                                              latitude: latitude,
                                              longitude: longitude)
-                allArt.append(artWork)
-                
+                allArt.append(artWork)                
                 }
             } catch {
                  print("Error finding artwork")
             }
         return allArt
+        
     }
     
     func getArtWork(objectid: String) -> PublicArt {

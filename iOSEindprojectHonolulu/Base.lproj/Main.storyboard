@@ -119,18 +119,66 @@ Man bun jianbing austin, iPhone try-hard pabst selfies chillwave man braid clich
         <!--Table Vew-->
         <scene sceneID="3eb-LX-KbD">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3L-Zr-Xb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Table Vew" id="haG-H5-fg4" customClass="TableViewController" customModule="iOSEindprojectHonolulu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jjz-Zx-JR7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3fV-Ic-qKy">
+                                <rect key="frame" x="0.0" y="20" width="414" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="artcell" textLabel="SJc-Ro-UX7" detailTextLabel="axa-Ef-x3r" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="XtF-lf-iQb" customClass="ArtTableViewCell" customModule="iOSEindprojectHonolulu" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XtF-lf-iQb" id="52a-xC-Im0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SJc-Ro-UX7">
+                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="axa-Ef-x3r">
+                                                    <rect key="frame" x="20" y="35.5" width="33" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artDescrLbl" destination="axa-Ef-x3r" id="B2k-Do-8XE"/>
+                                            <outlet property="artTitleLbl" destination="SJc-Ro-UX7" id="gIc-Nr-5g9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="haG-H5-fg4" id="0au-Uj-SBR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3fV-Ic-qKy" firstAttribute="bottom" secondItem="5Oo-Nm-V9R" secondAttribute="bottom" id="Qqa-wP-8IH"/>
+                            <constraint firstItem="3fV-Ic-qKy" firstAttribute="trailing" secondItem="5Oo-Nm-V9R" secondAttribute="trailing" id="frR-hc-WIk"/>
+                            <constraint firstItem="3fV-Ic-qKy" firstAttribute="top" secondItem="Jjz-Zx-JR7" secondAttribute="top" constant="20" symbolic="YES" id="hUG-Kf-y90"/>
+                            <constraint firstItem="3fV-Ic-qKy" firstAttribute="leading" secondItem="5Oo-Nm-V9R" secondAttribute="leading" id="jhv-st-Gg1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5Oo-Nm-V9R"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="List" image="list.bullet" catalog="system" id="K86-TH-MUN"/>
+                    <connections>
+                        <outlet property="tableView" destination="3fV-Ic-qKy" id="clw-es-maI"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o3L-Zr-Xb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-781" y="502"/>
+            <point key="canvasLocation" x="-781.15942028985512" y="501.5625"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="X02-Xa-jwD">

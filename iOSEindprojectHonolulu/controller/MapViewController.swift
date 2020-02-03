@@ -25,13 +25,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             mapView.region = visibleRegion
         }
         
-//        allArt = PublicArtDAO.sharedInstance.getAllArt()
-//                
-//        let pinArt:PublicArt = PublicArt(title: <#T##String#>, latitude: <#T##String#>, longitude: <#T##String#>)
-//        
-//        //voeg pin toe aan mapview
-//        self.mapView.addAnnotation(pinArt)
-//        
+        //allArt = PublicArtDAO.sharedInstance.getAllArt()
+                
+        //let pinArt:PublicArt = PublicArt(objectid: <#String#>, title: <#T##String#>, creator: <#String#>, imagefile: <#String#>, discipline: <#String#>, details: <#String#>, date: <#String#>, credit: <#String#>, access: <#String#>, latitude: <#T##String#>, longitude: <#T##String#>)
+        
+        //voeg pin toe aan mapview
+        //self.mapView.addAnnotation(pinArt)
+        
 
     }
     
