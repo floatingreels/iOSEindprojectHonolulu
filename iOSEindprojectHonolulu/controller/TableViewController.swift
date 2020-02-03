@@ -47,6 +47,7 @@ extension TableViewController:UITableViewDataSource {
         let art = artWorks[indexPath.row]
         
         cell.artTitleLbl.text = art.title
+        cell.artDescrLbl.text = art.creator
         
         return cell
         
