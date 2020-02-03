@@ -14,18 +14,20 @@ class PublicArt: NSObject, MKAnnotation {
     var objectid: String
     var title: String?
     var creator: String
-    var imagefile: String
     var discipline: String
     var details: String
     var date: String
     var credit: String
     var access: String
     var coordinate: CLLocationCoordinate2D
+    var latitude: String
+    var longitude: String
+    
+//    var coordinate: CLLocationCoordinate2D
 
     init(objectid: String,
          title: String,
          creator: String,
-         imagefile: String,
          discipline: String,
          details: String,
          date: String,
@@ -34,18 +36,19 @@ class PublicArt: NSObject, MKAnnotation {
          latitude: String,
          longitude: String) {
         
-        let coordLat = Double(latitude)
-        let coordLong = Double(longitude)
+//        let coordLat = Double(latitude)
+//        let coordLong = Double(longitude)
         
             self.objectid = objectid
             self.title = title
             self.creator = creator
-            self.imagefile = imagefile
             self.discipline = discipline
             self.details = details
             self.date = date
             self.credit = credit
+            self.latitude = latitude
+            self.longitude = longitude
             self.access = access
-            self.coordinate = CLLocationCoordinate2DMake(coordLat!, coordLong!)
+            self.coordinate = CLLocationCoordinate2DMake(Double(latitude)!, Double(longitude)!)
         }
 }

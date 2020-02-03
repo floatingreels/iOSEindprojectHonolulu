@@ -50,7 +50,6 @@ class PublicArtDAO {
                 let title = jsonTitle as! String
                 let creator = jsonCreator as! String
                 let details = item.value(forKey: "description") as! String
-                let imagefile = item.value(forKey: "imagefile") as! String
                 let access = item.value(forKey: "access") as! String
                 let discipline = item.value(forKey: "discipline") as! String
                 let date = jsonDate as! String
@@ -61,7 +60,6 @@ class PublicArtDAO {
                 let artWork = PublicArt.init(objectid: objectid,
                                              title: title,
                                              creator: creator,
-                                             imagefile: imagefile,
                                              discipline: discipline,
                                              details: details,
                                              date: date,
@@ -75,7 +73,6 @@ class PublicArtDAO {
                  print("Error finding artwork")
             }
         return allArt
-        
     }
     
 //    func getArtWork(objectid: String) -> PublicArt {

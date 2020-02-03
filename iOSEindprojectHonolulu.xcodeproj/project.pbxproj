@@ -20,6 +20,8 @@
 		41927F4B23E183CA0051387F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41927F4A23E183CA0051387F /* Assets.xcassets */; };
 		41927F4E23E183CA0051387F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41927F4C23E183CA0051387F /* LaunchScreen.storyboard */; };
 		8377E91323E83E4400994545 /* Oahu-Honolulu-Aerial-Hero-2_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8377E91223E83E4300994545 /* Oahu-Honolulu-Aerial-Hero-2_1.jpg */; };
+		8377E91523E8C09600994545 /* PublicArtAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377E91423E8C09600994545 /* PublicArtAnnotation.swift */; };
+		8377E91723E8C95700994545 /* PublicArtAnnotationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377E91623E8C95700994545 /* PublicArtAnnotationDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		41927F4D23E183CA0051387F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41927F4F23E183CA0051387F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8377E91223E83E4300994545 /* Oahu-Honolulu-Aerial-Hero-2_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Oahu-Honolulu-Aerial-Hero-2_1.jpg"; sourceTree = "<group>"; };
+		8377E91423E8C09600994545 /* PublicArtAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicArtAnnotation.swift; sourceTree = "<group>"; };
+		8377E91623E8C95700994545 /* PublicArtAnnotationDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicArtAnnotationDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			children = (
 				4167AC7C23E1A30D006FAFD8 /* PublicArt.swift */,
 				4167AC7E23E1A519006FAFD8 /* PublicArtDAO.swift */,
+				8377E91423E8C09600994545 /* PublicArtAnnotation.swift */,
+				8377E91623E8C95700994545 /* PublicArtAnnotationDAO.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -179,6 +185,8 @@
 				1D8380D123E820EE001BF3DE /* DetailViewController.swift in Sources */,
 				4167AC7D23E1A30D006FAFD8 /* PublicArt.swift in Sources */,
 				41927F4623E183C70051387F /* ViewController.swift in Sources */,
+				8377E91723E8C95700994545 /* PublicArtAnnotationDAO.swift in Sources */,
+				8377E91523E8C09600994545 /* PublicArtAnnotation.swift in Sources */,
 				41927F4223E183C70051387F /* AppDelegate.swift in Sources */,
 				1D8380CF23E812BF001BF3DE /* ArtTableViewCell.swift in Sources */,
 				4167AC7F23E1A519006FAFD8 /* PublicArtDAO.swift in Sources */,

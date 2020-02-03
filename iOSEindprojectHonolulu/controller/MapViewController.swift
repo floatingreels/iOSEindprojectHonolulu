@@ -13,30 +13,34 @@ import MapKit
 class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-     
-    var allArt = [PublicArt]()
-    
+
+    var artAnnotations = [PublicArtAnnotation]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        //de 
+        
+        //wat wordt weergegeven bij het laden van de map view
+        //coördinaat van het middelpunt van de kaart instellen
         let center = CLLocationCoordinate2D.init(latitude: 21.3069, longitude: -157.8583)
+        //hoogte en breedte instellen d.m.v. delta-coördinaten
         let span = MKCoordinateSpan.init(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        //aanmaken van de ingezoomde kaartweergave
         let visibleRegion = MKCoordinateRegion.init(center: center, span: span)
         mapView.region = visibleRegion
         
+        artAnnotations = PublicArtAnnotationDAO.sharedInstance.getAllAnnotations()
         
-        allArt = PublicArtDAO.sharedInstance.getAllArt()
-                
-        let pinArt:PublicArt = PublicArt(objectid: , title: <#T##String#>, creator: <#String#>, imagefile: <#String#>, discipline: <#String#>, details: <#String#>, date: <#String#>, credit: <#String#>, access: <#String#>, latitude: <#T##String#>, longitude: <#T##String#>)
+        mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
         
         //voeg pin toe aan mapview
-        self.mapView.addAnnotation(pinArt)
+//        self.mapView.addAnnotation(pinArt)
         
 
     }
     
     @IBAction func changeMapType(_ sender: UISegmentedControl) {
-        
+        //om te kunnen wisselen tussen kaart- en sattelietweergave
         switch sender.selectedSegmentIndex {
         case 0: mapView.mapType = .standard
         case 1: mapView.mapType = .satellite
@@ -47,7 +51,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     // MARK: - Navigation
 
-    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-    //}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
 }

@@ -22,7 +22,7 @@ class TableViewController: UIViewController, UITableViewDataSource {
 
 
 // MARK: DATASOURCE
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return artWorks.count
     }
@@ -30,9 +30,7 @@ class TableViewController: UIViewController, UITableViewDataSource {
 // MARK: DELEGATE
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "artcell", for: indexPath) as! ArtTableViewCell
-        
         let art = artWorks[indexPath.row]
         
         cell.artTitleLbl.text = art.title
