@@ -32,15 +32,18 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="4bC-MQ-Cl6"/>
                                 </constraints>
-                                <string key="text">Try-hard pour-over snackwave mustache bushwick farm-to-table, freegan etsy. Intelligentsia lomo cred, occupy truffaut bushwick before they sold out live-edge letterpress XOXO hell of pug asymmetrical. Thundercats keytar skateboard beard meditation af. Keytar meditation whatever vaporware pour-over blog. Pok pok forage knausgaard humblebrag godard. Skateboard cloud bread activated charcoal, iPhone pok pok normcore wolf. Hella williamsburg hoodie taiyaki bitters, celiac live-edge ramps.
+                                <mutableString key="text">Evidence of the first settlement of Honolulu by the original Polynesian migrants to the archipelago comes from oral histories and artifacts. These indicate that there was a settlement where Honolulu now stands in the 11th century. After Kamehameha I conquered Oʻahu in the Battle of Nuʻuanu at Nuʻuanu Pali, he moved his royal court from the Island of Hawaiʻi to Waikīkī in 1804. His court relocated in 1809 to what is now downtown Honolulu. The capital was moved back to Kailua-Kona in 1812.
 
-Photo booth drinking vinegar af palo santo pabst. Aesthetic twee fixie intelligentsia vexillologist. Coloring book sriracha butcher af. 8-bit DIY jean shorts crucifix tofu, cold-pressed ramps actually 3 wolf moon cardigan yr readymade williamsburg dreamcatcher skateboard.
+In 1794, Captain William Brown of Great Britain was the first foreigner to sail into what is now Honolulu Harbor. More foreign ships followed, making the port of Honolulu a focal point for merchant ships traveling between North America and Asia.
 
-Unicorn sartorial bitters bushwick, fixie ennui dreamcatcher vice jean shorts single-origin coffee food truck locavore. Wayfarers portland YOLO, meggings neutra food truck forage vinyl stumptown keytar wolf woke. Four dollar toast irony heirloom chillwave authentic butcher polaroid vinyl knausgaard typewriter poke celiac photo booth air plant. Kitsch banh mi church-key unicorn mlkshk umami master cleanse truffaut aesthetic fanny pack tofu gentrify iceland try-hard deep v. Vexillologist lo-fi snackwave quinoa cronut glossier hammock blog neutra succulents organic chambray keffiyeh.
+In 1845, Kamehameha III moved the permanent capital of the Hawaiian Kingdom from Lahaina on Maui to Honolulu. He and the kings that followed him transformed Honolulu into a modern capital erecting buildings such as St. Andrew's Cathedral, ʻIolani Palace, and Aliʻiōlani Hale. At the same time, Honolulu became the center of commerce in the islands, with descendants of American missionaries establishing major businesses in downtown Honolulu.
 
-Williamsburg synth messenger bag authentic you probably haven't heard of them deep v. Venmo hoodie readymade photo booth 8-bit activated charcoal farm-to-table. Retro coloring book you probably haven't heard of them pabst echo park raw denim pinterest street art wolf beard polaroid 8-bit. Occupy celiac typewriter, pork belly food truck helvetica venmo vexillologist cold-pressed biodiesel affogato locavore sartorial. Cliche pork belly humblebrag banh mi selfies. Kitsch farm-to-table biodiesel asymmetrical keytar bushwick.
+Despite the turbulent history of the late 19th century and early 20th century, such as the overthrow of the Hawaiian monarchy in 1893, Hawaiʻi's subsequent annexation by the United States in 1898, followed by a large fire in 1900, and the Japanese attack on Pearl Harbor in 1941, Honolulu remained the capital, largest city, and main airport and seaport of the Hawaiian Islands.
+A view of the attack on Pearl Harbor in 1941 from Japanese planes. The torpedo explosion in the center is on the USS West Virginia.
 
-Man bun jianbing austin, iPhone try-hard pabst selfies chillwave man braid cliche meditation semiotics. Portland distillery ennui biodiesel, woke vice before they sold out vexillologist. Tote bag copper mug biodiesel hot chicken kogi. Wolf letterpress bicycle rights pinterest godard offal lomo shabby chic mumblecore shaman beard lyft drinking vinegar brunch. Slow-carb farm-to-table pabst, meh flannel aesthetic vexillologist.</string>
+An economic and tourism boom following statehood brought rapid economic growth to Honolulu and Hawaiʻi. Modern air travel brings, as of 2007, 7.6 million visitors annually to the islands, with 62.3% entering at Honolulu International Airport. Today, Honolulu is a modern city with numerous high-rise buildings, and Waikīkī is the center of the tourism industry in Hawaiʻi, with thousands of hotel rooms. The UK consulting firm Mercer, in a 2009 assessment "conducted to help governments and major companies place employees on international assignments", ranked Honolulu 29th worldwide in quality of living; the survey factored in political stability, personal freedom, sanitation, crime, housing, the natural environment, recreation, banking facilities, availability of consumer goods, education, and public services including transportation.
+
+Source: wikipedia</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -129,7 +132,7 @@ Man bun jianbing austin, iPhone try-hard pabst selfies chillwave man braid clich
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3fV-Ic-qKy">
+                            <tableView clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3fV-Ic-qKy">
                                 <rect key="frame" x="0.0" y="20" width="414" height="793"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -141,16 +144,16 @@ Man bun jianbing austin, iPhone try-hard pabst selfies chillwave man braid clich
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SJc-Ro-UX7">
-                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="3" width="33.5" height="28.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="axa-Ef-x3r">
-                                                    <rect key="frame" x="20" y="35.5" width="33" height="14.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Creator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="axa-Ef-x3r">
+                                                    <rect key="frame" x="20" y="34.5" width="48" height="25"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
