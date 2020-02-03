@@ -11,7 +11,8 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var creatorDateLbl: UILabel!
+    @IBOutlet weak var creatorLbl: UILabel!
+    @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var accessLbl: UILabel!
     @IBOutlet weak var disciplineLbl: UILabel!
     @IBOutlet weak var detailsTV: UITextView!
@@ -23,9 +24,10 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         titleLbl.text = artToDetail?.title
-        creatorDateLbl.text = "\(artToDetail!.creator), \(artToDetail!.date)"
-        accessLbl.text = artToDetail?.access
-        disciplineLbl.text = artToDetail?.discipline
+        creatorLbl.text = artToDetail?.creator
+        dateLbl.text = artToDetail?.date
+        accessLbl.text = "Access: \(artToDetail!.access)"
+        disciplineLbl.text = "Type: \(artToDetail!.discipline)"
         detailsTV.text = artToDetail?.details
         
     }

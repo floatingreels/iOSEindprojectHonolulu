@@ -18,22 +18,19 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-            
-            
-            
+        //de 
         let center = CLLocationCoordinate2D.init(latitude: 21.3069, longitude: -157.8583)
         let span = MKCoordinateSpan.init(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let visibleRegion = MKCoordinateRegion.init(center: center, span: span)
         mapView.region = visibleRegion
         
         
-        //allArt = PublicArtDAO.sharedInstance.getAllArt()
+        allArt = PublicArtDAO.sharedInstance.getAllArt()
                 
-        //let pinArt:PublicArt = PublicArt(objectid: , title: <#T##String#>, creator: <#String#>, imagefile: <#String#>, discipline: <#String#>, details: <#String#>, date: <#String#>, credit: <#String#>, access: <#String#>, latitude: <#T##String#>, longitude: <#T##String#>)
+        let pinArt:PublicArt = PublicArt(objectid: , title: <#T##String#>, creator: <#String#>, imagefile: <#String#>, discipline: <#String#>, details: <#String#>, date: <#String#>, credit: <#String#>, access: <#String#>, latitude: <#T##String#>, longitude: <#T##String#>)
         
         //voeg pin toe aan mapview
-        //self.mapView.addAnnotation(pinArt)
+        self.mapView.addAnnotation(pinArt)
         
 
     }

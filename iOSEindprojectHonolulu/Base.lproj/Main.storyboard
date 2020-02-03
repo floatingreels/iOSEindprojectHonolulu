@@ -40,7 +40,7 @@ Source: wikipedia</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfT-ac-nck">
-                                <rect key="frame" x="-1" y="44" width="414" height="44"/>
+                                <rect key="frame" x="-1" y="44" width="453" height="44"/>
                                 <items>
                                     <navigationItem title="Honolulu Art in Public" id="eDF-Ne-MIb"/>
                                 </items>
@@ -136,83 +136,90 @@ Source: wikipedia</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oahu-Honolulu-Aerial-Hero-2_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xXZ-As-rVZ">
-                                <rect key="frame" x="0.0" y="0.0" width="1698" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Oahu-Honolulu-Aerial-Hero-2_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xXZ-As-rVZ">
+                                <rect key="frame" x="0.0" y="-136" width="2093" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="P7q-T9-tjs">
-                                <rect key="frame" x="39" y="419" width="336" height="353"/>
+                                <rect key="frame" x="31" y="375" width="352" height="438"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="353" id="8nn-aO-3s9"/>
+                                    <constraint firstAttribute="width" constant="352" id="HuC-sb-1QH"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Light" family="Mukta Mahee" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-nl-7HP">
-                                <rect key="frame" x="39" y="106" width="336" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-nl-7HP">
+                                <rect key="frame" x="183" y="109" width="47" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="336" id="2cy-CK-IoG"/>
-                                    <constraint firstAttribute="height" constant="66" id="Crw-Lp-TXD"/>
+                                    <constraint firstAttribute="height" constant="75" id="Kmo-3U-fMP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreatorDate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaO-UF-MXf">
-                                <rect key="frame" x="39" y="172" width="336" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaO-UF-MXf">
+                                <rect key="frame" x="20" y="192" width="374" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="336" id="YGn-pj-MzD"/>
-                                    <constraint firstAttribute="height" constant="61" id="c3Q-gN-vOI"/>
+                                    <constraint firstAttribute="width" constant="374" id="War-Xp-yYV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discipline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IS-r3-njc">
-                                <rect key="frame" x="39" y="241" width="140" height="29"/>
+                                <rect key="frame" x="22" y="297" width="150" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="l4H-v5-87k"/>
+                                    <constraint firstAttribute="width" constant="150" id="dpV-O7-Sl1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utM-gk-Szx">
-                                <rect key="frame" x="242" y="241" width="133" height="28.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utM-gk-Szx">
+                                <rect key="frame" x="245" y="297" width="150" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="133" id="Izw-cG-WpN"/>
+                                    <constraint firstAttribute="width" constant="150" id="Fy2-Ju-7EF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAW-ml-fVv">
+                                <rect key="frame" x="184" y="252" width="44" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="cfe-jT-WFJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="P7q-T9-tjs" firstAttribute="leading" secondItem="8IS-r3-njc" secondAttribute="leading" id="2Yr-lZ-p26"/>
-                            <constraint firstItem="8IS-r3-njc" firstAttribute="top" secondItem="TaO-UF-MXf" secondAttribute="bottom" constant="8" id="3DU-Pc-MFL"/>
-                            <constraint firstItem="8IS-r3-njc" firstAttribute="leading" secondItem="aaa-nl-7HP" secondAttribute="leading" id="5Na-5E-ZUT"/>
-                            <constraint firstItem="TaO-UF-MXf" firstAttribute="leading" secondItem="aaa-nl-7HP" secondAttribute="leading" id="LES-cM-56m"/>
-                            <constraint firstItem="xXZ-As-rVZ" firstAttribute="top" secondItem="8xy-dH-DAW" secondAttribute="top" id="Ptl-m8-Dkq"/>
-                            <constraint firstItem="aaa-nl-7HP" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="VEk-Cy-o3H"/>
-                            <constraint firstItem="xXZ-As-rVZ" firstAttribute="top" secondItem="aaa-nl-7HP" secondAttribute="bottom" constant="-172" id="Xfi-4g-jLy"/>
-                            <constraint firstItem="TaO-UF-MXf" firstAttribute="top" secondItem="aaa-nl-7HP" secondAttribute="bottom" id="djR-sD-9m7"/>
-                            <constraint firstItem="P7q-T9-tjs" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="f99-hp-mKT"/>
-                            <constraint firstItem="hdm-At-pK2" firstAttribute="trailing" secondItem="utM-gk-Szx" secondAttribute="trailing" constant="39" id="j6h-W2-XUc"/>
-                            <constraint firstItem="8IS-r3-njc" firstAttribute="leading" secondItem="hdm-At-pK2" secondAttribute="leading" constant="39" id="kCa-GF-JCu"/>
-                            <constraint firstItem="hdm-At-pK2" firstAttribute="bottom" secondItem="P7q-T9-tjs" secondAttribute="bottom" constant="41" id="otj-El-JSE"/>
-                            <constraint firstItem="TaO-UF-MXf" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="q56-V7-BHM"/>
-                            <constraint firstItem="utM-gk-Szx" firstAttribute="top" secondItem="TaO-UF-MXf" secondAttribute="bottom" constant="8" id="sYy-Sh-9C3"/>
-                            <constraint firstAttribute="bottom" secondItem="xXZ-As-rVZ" secondAttribute="bottom" id="wJs-jV-F4L"/>
-                            <constraint firstItem="xXZ-As-rVZ" firstAttribute="leading" secondItem="hdm-At-pK2" secondAttribute="leading" id="y0S-UC-J3M"/>
+                            <constraint firstItem="aaa-nl-7HP" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="3b4-st-rFL"/>
+                            <constraint firstItem="8IS-r3-njc" firstAttribute="leading" secondItem="hdm-At-pK2" secondAttribute="leading" constant="22" id="BPa-aq-Vqe"/>
+                            <constraint firstItem="P7q-T9-tjs" firstAttribute="top" secondItem="8IS-r3-njc" secondAttribute="bottom" constant="49" id="GYs-Hu-zAn"/>
+                            <constraint firstItem="utM-gk-Szx" firstAttribute="leading" secondItem="8IS-r3-njc" secondAttribute="trailing" constant="73" id="Hc3-cZ-R1M"/>
+                            <constraint firstItem="hdm-At-pK2" firstAttribute="trailing" secondItem="utM-gk-Szx" secondAttribute="trailing" constant="19" id="K2X-Ha-pMD"/>
+                            <constraint firstItem="XAW-ml-fVv" firstAttribute="top" secondItem="TaO-UF-MXf" secondAttribute="bottom" constant="23" id="Lzb-79-h4M"/>
+                            <constraint firstItem="XAW-ml-fVv" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" constant="-1" id="On4-Ah-l4o"/>
+                            <constraint firstItem="8IS-r3-njc" firstAttribute="top" secondItem="XAW-ml-fVv" secondAttribute="bottom" constant="8" id="Wa4-Lr-qsu"/>
+                            <constraint firstItem="TaO-UF-MXf" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="aeB-RB-N99"/>
+                            <constraint firstItem="hdm-At-pK2" firstAttribute="bottom" secondItem="P7q-T9-tjs" secondAttribute="bottom" id="bo3-Hf-Mcj"/>
+                            <constraint firstItem="TaO-UF-MXf" firstAttribute="top" secondItem="aaa-nl-7HP" secondAttribute="bottom" constant="8" id="fyr-NC-1Ct"/>
+                            <constraint firstItem="utM-gk-Szx" firstAttribute="top" secondItem="XAW-ml-fVv" secondAttribute="bottom" constant="8" id="gJG-hS-tid"/>
+                            <constraint firstItem="P7q-T9-tjs" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="iQg-si-gzr"/>
+                            <constraint firstItem="aaa-nl-7HP" firstAttribute="top" secondItem="hdm-At-pK2" secondAttribute="top" constant="21" id="xVs-rh-UCL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hdm-At-pK2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="e2w-9J-exM"/>
                     <connections>
                         <outlet property="accessLbl" destination="utM-gk-Szx" id="7yp-fu-41v"/>
-                        <outlet property="creatorDateLbl" destination="TaO-UF-MXf" id="fCw-GK-qto"/>
+                        <outlet property="creatorLbl" destination="TaO-UF-MXf" id="FO0-3G-LX9"/>
+                        <outlet property="dateLbl" destination="XAW-ml-fVv" id="8Rc-ja-Yxw"/>
                         <outlet property="detailsTV" destination="P7q-T9-tjs" id="Ji5-dG-bGt"/>
                         <outlet property="disciplineLbl" destination="8IS-r3-njc" id="PBS-yK-SFo"/>
                         <outlet property="titleLbl" destination="aaa-nl-7HP" id="89l-kh-RLt"/>
@@ -220,7 +227,7 @@ Source: wikipedia</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0F-Px-qOS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921.73913043478262" y="85.714285714285708"/>
+            <point key="canvasLocation" x="920.28985507246387" y="84.375"/>
         </scene>
         <!--Table View-->
         <scene sceneID="3eb-LX-KbD">
