@@ -30,7 +30,7 @@ class PublicArtDAO {
                 
                 var jsonTitle = item.value(forKey: "title")
                 if jsonTitle == nil {
-                    jsonTitle = "None"}
+                    jsonTitle = "Unnamed"}
             
                 var jsonCredit = item.value(forKey: "credit")
                 if jsonCredit == nil {
