@@ -74,32 +74,4 @@ class PublicArtDAO {
             }
         return allArt
     }
-    
-//    func getArtWork(objectid: String) -> PublicArt {
-//
-//        var artWork:PublicArt?
-//
-//        let url = URL.init(string: "https://data.honolulu.gov/resource/yef5-h88r.json?objectid=\(objectid)")
-//        do {
-//            let rawData = try Data.init(contentsOf: url!)
-//            let jsonData = try JSONSerialization.jsonObject(with: rawData) as! NSObject
-//
-//            artWork = PublicArt.init(objectid: jsonData.value(forKey: "objectid") as! String,
-//                                     title: jsonData.value(forKey: "title") as! String,
-//                                     creator: jsonData.value(forKey: "creator") as! String,
-//                                     imagefile: jsonData.value(forKey: "imagefile") as! String,
-//                                     discipline: jsonData.value(forKey: "discipline") as! String,
-//                                     details: jsonData.value(forKey: "description") as! String,
-//                                     date: jsonData.value(forKey: "date") as! String,
-//                                     credit: jsonData.value(forKey: "credit") as! String,
-//                                     access: jsonData.value(forKey: "access") as! String,
-//                                     latitude: jsonData.value(forKey: "latitude") as! String,
-//                                     longitude: jsonData.value(forKey: "longitude") as! String)
-//
-//        } catch {
-//            print("Error finding user")
-//        }
-//        return artWork!
-//    }
-    
 }

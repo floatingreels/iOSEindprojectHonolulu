@@ -8,6 +8,7 @@
 
 import UIKit
 
+//deze klasse geeft de geschiedenis van de stat weer
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

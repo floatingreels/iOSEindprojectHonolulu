@@ -17,18 +17,17 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var disciplineLbl: UILabel!
     @IBOutlet weak var detailsTV: UITextView!
     
-    
     var artToDetail:PublicArt?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //labels invullen met gegevens uit andere view controllers
         titleLbl.text = artToDetail?.title
         creatorLbl.text = artToDetail?.creator
         dateLbl.text = artToDetail?.date
         accessLbl.text = "Access: \(artToDetail!.access)"
         disciplineLbl.text = "Type: \(artToDetail!.discipline)"
         detailsTV.text = artToDetail?.details
-        
     }
 }

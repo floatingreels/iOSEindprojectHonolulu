@@ -150,11 +150,8 @@ Source: wikipedia</string>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Light" family="Mukta Mahee" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-nl-7HP">
-                                <rect key="frame" x="183.5" y="109" width="47" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="Kmo-3U-fMP"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-nl-7HP">
+                                <rect key="frame" x="31" y="97" width="352" height="80"/>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -198,8 +195,8 @@ Source: wikipedia</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="aaa-nl-7HP" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="3b4-st-rFL"/>
                             <constraint firstItem="8IS-r3-njc" firstAttribute="leading" secondItem="hdm-At-pK2" secondAttribute="leading" constant="22" id="BPa-aq-Vqe"/>
+                            <constraint firstItem="TaO-UF-MXf" firstAttribute="top" secondItem="aaa-nl-7HP" secondAttribute="bottom" constant="15" id="CKb-r8-g2y"/>
                             <constraint firstItem="P7q-T9-tjs" firstAttribute="top" secondItem="8IS-r3-njc" secondAttribute="bottom" constant="49" id="GYs-Hu-zAn"/>
                             <constraint firstItem="utM-gk-Szx" firstAttribute="leading" secondItem="8IS-r3-njc" secondAttribute="trailing" constant="73" id="Hc3-cZ-R1M"/>
                             <constraint firstItem="hdm-At-pK2" firstAttribute="trailing" secondItem="utM-gk-Szx" secondAttribute="trailing" constant="19" id="K2X-Ha-pMD"/>
@@ -208,10 +205,11 @@ Source: wikipedia</string>
                             <constraint firstItem="8IS-r3-njc" firstAttribute="top" secondItem="XAW-ml-fVv" secondAttribute="bottom" constant="8" id="Wa4-Lr-qsu"/>
                             <constraint firstItem="TaO-UF-MXf" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="aeB-RB-N99"/>
                             <constraint firstItem="hdm-At-pK2" firstAttribute="bottom" secondItem="P7q-T9-tjs" secondAttribute="bottom" id="bo3-Hf-Mcj"/>
-                            <constraint firstItem="TaO-UF-MXf" firstAttribute="top" secondItem="aaa-nl-7HP" secondAttribute="bottom" constant="8" id="fyr-NC-1Ct"/>
                             <constraint firstItem="utM-gk-Szx" firstAttribute="top" secondItem="XAW-ml-fVv" secondAttribute="bottom" constant="8" id="gJG-hS-tid"/>
+                            <constraint firstItem="aaa-nl-7HP" firstAttribute="trailing" secondItem="P7q-T9-tjs" secondAttribute="trailing" id="hsz-nC-zfx"/>
                             <constraint firstItem="P7q-T9-tjs" firstAttribute="centerX" secondItem="8xy-dH-DAW" secondAttribute="centerX" id="iQg-si-gzr"/>
-                            <constraint firstItem="aaa-nl-7HP" firstAttribute="top" secondItem="hdm-At-pK2" secondAttribute="top" constant="21" id="xVs-rh-UCL"/>
+                            <constraint firstItem="aaa-nl-7HP" firstAttribute="leading" secondItem="P7q-T9-tjs" secondAttribute="leading" id="kOJ-AQ-1WF"/>
+                            <constraint firstItem="aaa-nl-7HP" firstAttribute="top" secondItem="hdm-At-pK2" secondAttribute="top" constant="9" id="sFq-pB-Axo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hdm-At-pK2"/>
                     </view>

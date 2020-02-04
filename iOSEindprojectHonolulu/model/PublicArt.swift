@@ -22,8 +22,6 @@ class PublicArt : NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var latitude: String
     var longitude: String
-    
-//    var coordinate: CLLocationCoordinate2D
 
     init(objectid: String,
          title: String?,
@@ -35,10 +33,6 @@ class PublicArt : NSObject, MKAnnotation {
          access: String,
          latitude: String,
          longitude: String) {
-        
-//        let coordLat = Double(latitude)
-//        let coordLong = Double(longitude)
-        
             self.objectid = objectid
             self.title = title
             self.creator = creator
@@ -49,6 +43,7 @@ class PublicArt : NSObject, MKAnnotation {
             self.latitude = latitude
             self.longitude = longitude
             self.access = access
-            self.coordinate = CLLocationCoordinate2DMake(Double(latitude)!, Double(longitude)!)
+            self.coordinate = CLLocationCoordinate2DMake(Double(latitude)!,
+                                                         Double(longitude)!)
         }
 }
