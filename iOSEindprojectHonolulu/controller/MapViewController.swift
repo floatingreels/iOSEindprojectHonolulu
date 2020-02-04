@@ -15,7 +15,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
 
     var allAnnotations = [PublicArtAnnotation]()
-    var artAnnotation:PublicArtAnnotation?
 
     
     override func viewDidLoad() {
@@ -34,11 +33,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
         mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
-        let annotation = PublicArtAnnotation.init(title: "Honolulu",
-        coordinate: center)
-        
         //voeg pin toe aan mapview
-        self.mapView.addAnnotation(annotation)
+        self.mapView.addAnnotations(allAnnotations)
         
     }
     
