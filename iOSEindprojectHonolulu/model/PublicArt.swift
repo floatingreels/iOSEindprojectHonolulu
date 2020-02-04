@@ -13,12 +13,12 @@ class PublicArt : NSObject, MKAnnotation {
        
     var objectid: String
     var title: String?
-    var creator: String?
-    var discipline: String?
-    var details: String?
-    var date: String?
-    var credit: String?
-    var access: String?
+    var creator: String
+    var discipline: String
+    var details: String
+    var date: String
+    var credit: String
+    var access: String
     var coordinate: CLLocationCoordinate2D
     var latitude: String
     var longitude: String
@@ -27,12 +27,12 @@ class PublicArt : NSObject, MKAnnotation {
 
     init(objectid: String,
          title: String?,
-         creator: String?,
-         discipline: String?,
-         details: String?,
-         date: String?,
-         credit: String?,
-         access: String?,
+         creator: String,
+         discipline: String,
+         details: String,
+         date: String,
+         credit: String,
+         access: String,
          latitude: String,
          longitude: String) {
         

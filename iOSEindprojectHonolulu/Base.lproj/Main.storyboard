@@ -40,7 +40,7 @@ Source: wikipedia</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfT-ac-nck">
-                                <rect key="frame" x="-1" y="44" width="453" height="44"/>
+                                <rect key="frame" x="-1" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Honolulu Art in Public" id="eDF-Ne-MIb"/>
                                 </items>
@@ -122,6 +122,7 @@ Source: wikipedia</string>
                     <navigationItem key="navigationItem" id="VqN-JG-24r"/>
                     <connections>
                         <outlet property="mapView" destination="Yfk-qj-2xj" id="etC-FK-7Qk"/>
+                        <segue destination="uRJ-1e-WxP" kind="show" identifier="mapToDetailSegue" id="sua-oV-hF2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7v6-tD-lZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -151,7 +152,7 @@ Source: wikipedia</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-nl-7HP">
-                                <rect key="frame" x="183" y="109" width="47" height="75"/>
+                                <rect key="frame" x="183.5" y="109" width="47" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Kmo-3U-fMP"/>
                                 </constraints>
@@ -368,4 +369,7 @@ Source: wikipedia</string>
         <image name="list.bullet" catalog="system" width="64" height="44"/>
         <image name="mappin.circle" catalog="system" width="64" height="60"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sua-oV-hF2"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -11,11 +11,10 @@ import MapKit
 
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
-
+    
     @IBOutlet weak var mapView: MKMapView!
-
-    var allAnnotations = [PublicArtAnnotation]()
-
+    
+    var allArt = [PublicArt]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +28,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let visibleRegion = MKCoordinateRegion.init(center: center, span: span)
         mapView.region = visibleRegion
         
-        allAnnotations = PublicArtAnnotationDAO.sharedInstance.getAllAnnotations()
-
-        mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        allArt = PublicArtDAO.sharedInstance.getAllArt()
         
-        //voeg pin toe aan mapview
-        self.mapView.addAnnotations(allAnnotations)
+        //voeg pinnen toe aan mapview
+        self.mapView.addAnnotations(allArt)
         
     }
     
@@ -46,11 +43,69 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         default:print()
         }
     }
+}
 
 
-    // MARK: - Navigation
 
-    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+extension MapViewController : MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if let art = annotation as? PublicArt {
+            //gaat zien of er al een herbruikbare pin (customview) in mapview bestaat
+            if let customView = mapView.dequeueReusableAnnotationView(withIdentifier: "pin") {
+                //geeft de customview de eigenschappen van je eingen klasse
+                customView.annotation = art
+                //toon de customview
+                return customView
+            } else {
+                //maak een nieuwe view aan met de annotatie uit je eigen klasse en herbruikbare ID
+                let customView = MKPinAnnotationView.init(annotation: art, reuseIdentifier: "pin")
+                
+                //geef kleur aan je customview
+                customView.pinTintColor = UIColor.blue
+                //zet dropanimatie uit want is irritant
+                customView.animatesDrop = false
+                //toon de var subtitle uit eigen klasse
+                customView.canShowCallout = true
+                customView.showsLargeContentViewer = true
+                customView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+                //toon de customview
+                return customView
+            }
+        }
+        //code opvangen moest hij geen annotaties vinden
+        return nil
+    }
+    
+//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+//        let alert = UIAlertController.init(title: "Public Art",
+//                                           message: "Would you like to know more?",
+//                                           preferredStyle: .alert)
         
-    //}
+        //ok handler aanmaken, wat uitvoeren als we op knop duwen
+//        let okActionHandler = {(action:UIAlertAction) -> Void in
+//        }
+        
+//        let okAction = UIAlertAction.init(title: "OK",
+//                                          style: .default,
+//                                          handler: okActionHandler)
+        
+//        let cancelAction = UIAlertAction.init(title: "Cancel",
+//                                              style: .cancel,
+//                                              handler: nil)
+        
+        //de aangemaakte actions  toevoegen aan de alert
+//        alert.addAction(okAction)
+//        alert.addAction(cancelAction)
+        
+        //hoe moet de alert worden weergegeven
+//        self.present(alert, animated: true, completion: nil)
+//    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let art = sender as! PublicArt
+//        let detailVC = segue.destination as! DetailViewController
+//        detailVC.artToDetail = art
+//    }
+
+
 }
