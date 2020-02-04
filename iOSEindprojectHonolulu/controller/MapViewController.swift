@@ -9,8 +9,7 @@
 import UIKit
 import MapKit
 
-
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -27,10 +26,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let visibleRegion = MKCoordinateRegion.init(center: center, span: span)
         //de gekozen weergave tonen in map view
         mapView.region = visibleRegion
-        
         //verwijzing maken naar datasource
         allArt = PublicArtDAO.sharedInstance.getAllArt()
-        
         //voeg pinnen toe aan mapview
         self.mapView.addAnnotations(allArt)
     }
@@ -43,48 +40,47 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         default:print()
         }
     }
-}
 
-extension MapViewController : MKMapViewDelegate {
+    // MARK: DELEGATE
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if let art = annotation as? PublicArt {
+            if annotation is MKUserLocation {
+                return nil
+            }
             //gaat zien of er al een herbruikbare annotationview in mapview bestaat
             if let artPin = mapView.dequeueReusableAnnotationView(withIdentifier: "pin") {
-                //geeft de view de eigenschappen van je eingen klasse
+                //geeft de annotationview de eigenschappen van je eingen klasse
                 artPin.annotation = art
                 //geef de view weer
                 return artPin
             } else {
-                //maak een nieuwe view aan met de annotatie uit je eigen klasse en herbruikbare ID
+                //maak een nieuwe annotationview aan met de annotation uit je eigen klasse en herbruikbare ID
                 let artPin = MKPinAnnotationView.init(annotation: art, reuseIdentifier: "pin")
-                
-                //geef kleur aan je view
-                artPin.pinTintColor = UIColor.blue
+                //geef kleur aan je annotationview
+                artPin.pinTintColor = UIColor.black
                 //zet dropanimatie uit want is irritant
                 artPin.animatesDrop = false
                 //toon de relevante properties uit eigen klasse
                 artPin.canShowCallout = true
-                //geef meer ruimte om details te tonen
-                //artPin.showsLargeContentViewer = true
-                //voeg button toe aan callout met vorm 'meer info'
-                artPin.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-                //geef de view weer
+                //met dank aan Aula Swift (https://www.youtube.com/watch?v=a5dIfnuVdSk)
+                //maak een button voor 'info'
+                let button = UIButton(type: .detailDisclosure)
+                //verander van default (blauw) naar zwart
+                button.tintColor = .black
+                //voeg button toe aan callout
+                artPin.rightCalloutAccessoryView = button
+                //geef de annotationview weer
                 return artPin
             }
         }
-        //code opvangen in geval dat er geen view is
+        //code opvangen in geval dat er geen annotationview is
         return nil
     }
-    func configureDetailView(annotationView: MKAnnotationView) -> UIView {
-        let snapshotView = UIView()
-        let views = ["snapshotView": snapshotView]
-        snapshotView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[snapshotView(200)]", options: [], metrics: nil, views: views))
-        //do your work
-        return snapshotView
-    }
-    
+
+    //MARK: NAVIGATE
+    //nogmaals met dank aan Aula Swift (https://www.youtube.com/watch?v=a5dIfnuVdSk)
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        //de gekozen view moet vanaf nu alle gegevens van de klasse hebben
+        //de gekozen annotationview moet vanaf nu alle gegevens van de klasse hebben
         let artView = view.annotation as! PublicArt
         //verwijzing maken naar storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

@@ -21,7 +21,6 @@ class TableViewController: UIViewController, UITableViewDataSource {
         artWorks = PublicArtDAO.sharedInstance.getAllArt()
     }
 
-
 // MARK: DATASOURCE
     //hoeveel rijen in de tabel
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,7 +41,6 @@ class TableViewController: UIViewController, UITableViewDataSource {
     }
     
 //MARK: NAVIGATE
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //nakijken of de segue de juiste is
         if segue.identifier == "showDetailSegue" {
