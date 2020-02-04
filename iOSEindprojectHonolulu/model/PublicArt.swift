@@ -17,7 +17,6 @@ class PublicArt : NSObject, MKAnnotation {
     var discipline: String
     var details: String
     var date: String
-    var credit: String
     var access: String
     var coordinate: CLLocationCoordinate2D
     var latitude: String
@@ -29,7 +28,6 @@ class PublicArt : NSObject, MKAnnotation {
          discipline: String,
          details: String,
          date: String,
-         credit: String,
          access: String,
          latitude: String,
          longitude: String) {
@@ -39,7 +37,6 @@ class PublicArt : NSObject, MKAnnotation {
             self.discipline = discipline
             self.details = details
             self.date = date
-            self.credit = credit
             self.latitude = latitude
             self.longitude = longitude
             self.access = access

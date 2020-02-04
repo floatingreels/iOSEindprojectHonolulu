@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //labels invullen de gegevens die binnenkomen
+        //labels invullen met de gegevens die binnenkomen
         titleLbl.text = artToDetail?.title
         creatorLbl.text = artToDetail?.creator
         dateLbl.text = artToDetail?.date
