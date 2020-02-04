@@ -9,6 +9,8 @@
 import Foundation
 import MapKit
 
+
+//klasse misschien niet nodig...
 class PublicArtAnnotation : NSObject, MKAnnotation {
     
     var title : String?

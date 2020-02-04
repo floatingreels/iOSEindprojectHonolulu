@@ -31,18 +31,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         mapView.region = visibleRegion
         
         allAnnotations = PublicArtAnnotationDAO.sharedInstance.getAllAnnotations()
-        artAnnotation = PublicArtAnnotationDAO.sharedInstance.getArtAnnotation(objectid: PublicArt.objectid)
 
         mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
         let annotation = PublicArtAnnotation.init(title: "Honolulu",
         coordinate: center)
         
-        
         //voeg pin toe aan mapview
         self.mapView.addAnnotation(annotation)
         
-
     }
     
     @IBAction func changeMapType(_ sender: UISegmentedControl) {
@@ -57,7 +54,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     // MARK: - Navigation
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-    }
+    //}
 }
