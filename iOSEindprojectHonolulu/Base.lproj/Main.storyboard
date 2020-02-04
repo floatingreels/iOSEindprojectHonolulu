@@ -122,7 +122,6 @@ Source: wikipedia</string>
                     <navigationItem key="navigationItem" id="VqN-JG-24r"/>
                     <connections>
                         <outlet property="mapView" destination="Yfk-qj-2xj" id="etC-FK-7Qk"/>
-                        <segue destination="uRJ-1e-WxP" kind="show" identifier="mapToDetailSegue" id="sua-oV-hF2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7v6-tD-lZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -132,7 +131,7 @@ Source: wikipedia</string>
         <!--Details-->
         <scene sceneID="RYN-TX-3qg">
             <objects>
-                <viewController id="uRJ-1e-WxP" customClass="DetailViewController" customModule="iOSEindprojectHonolulu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Details" id="uRJ-1e-WxP" customClass="DetailViewController" customModule="iOSEindprojectHonolulu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8xy-dH-DAW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,7 +368,4 @@ Source: wikipedia</string>
         <image name="list.bullet" catalog="system" width="64" height="44"/>
         <image name="mappin.circle" catalog="system" width="64" height="60"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="sua-oV-hF2"/>
-    </inferredMetricsTieBreakers>
 </document>

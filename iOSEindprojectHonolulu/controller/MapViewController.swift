@@ -51,29 +51,39 @@ extension MapViewController : MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if let art = annotation as? PublicArt {
             //gaat zien of er al een herbruikbare pin (customview) in mapview bestaat
-            if let customView = mapView.dequeueReusableAnnotationView(withIdentifier: "pin") {
+            if let artPin = mapView.dequeueReusableAnnotationView(withIdentifier: "pin") {
                 //geeft de customview de eigenschappen van je eingen klasse
-                customView.annotation = art
+                artPin.annotation = art
                 //toon de customview
-                return customView
+                return artPin
             } else {
                 //maak een nieuwe view aan met de annotatie uit je eigen klasse en herbruikbare ID
-                let customView = MKPinAnnotationView.init(annotation: art, reuseIdentifier: "pin")
+                let artPin = MKPinAnnotationView.init(annotation: art, reuseIdentifier: "pin")
                 
                 //geef kleur aan je customview
-                customView.pinTintColor = UIColor.blue
+                artPin.pinTintColor = UIColor.blue
                 //zet dropanimatie uit want is irritant
-                customView.animatesDrop = false
+                artPin.animatesDrop = false
                 //toon de var subtitle uit eigen klasse
-                customView.canShowCallout = true
-                customView.showsLargeContentViewer = true
-                customView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+                artPin.canShowCallout = true
+                artPin.showsLargeContentViewer = true
+                artPin.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
                 //toon de customview
-                return customView
+                return artPin
             }
         }
         //code opvangen moest hij geen annotaties vinden
         return nil
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let artView = view.annotation as! PublicArt
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailVC = storyboard.instantiateViewController(identifier: "Details") as! DetailViewController
+        detailVC.artToDetail = artView
+        
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        
     }
     
 //    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
